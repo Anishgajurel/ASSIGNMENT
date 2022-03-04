@@ -1,0 +1,165 @@
+* {
+	box-sizing: content-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #444;
+	color: orangered;
+}
+
+.brand-title {
+	font-size: 1.5rem;
+	margin: .5rem;
+}
+
+.navbar-links ul{
+	margin: 0;
+	padding: 0;
+	display: inline-flex;
+}
+
+.navbar-links li {
+	list-style: none;
+}
+
+.navbar-links li a {
+	text-decoration: inherit;
+	color:seagreen ;
+	padding: 1rem;
+	display: block;
+}
+
+.navbar-links li:hover {
+	background-color: #555;
+}
+
+.toggle-button {
+	position: absolute;
+	top: .75rem;
+	right: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+body {
+	background-color:blueviolet;
+}
+
+.footer{
+	background-color: blue;
+	text-align: center;
+	padding: 40px;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+}
+
+.container{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px 100px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	filter: vlur(50px);
+}
+
+.contact-box{
+	max-width: 850px;
+	display: inline-grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0.19);
+}
+
+.left{
+	height: 100%;
+	background-size: cover;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+.field{
+	width: 100% ;
+	padding: 0.5rem 1rem ;
+	outline: none ;
+	border: 2px solid rgba'0, 0,;
+	background-color: ;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s ;
+}
+
+.field:hover{
+	background-color: rgba(0,0,0,0.1);
+}
+
+.field:focus{
+	background-color: #fff;
+	border: 2px solid rgba(30,85,250,0.47);
+}
+
+.area{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	background-color: #2ecc71;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	transition: .3s;
+}
+
+.btn:hover{
+	background-color: #27ae60;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+
+	.left{
+		height: 200px;
+	}
+}
